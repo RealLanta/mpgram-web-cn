@@ -3,6 +3,7 @@
 在原版的基础上不仅汉化也修复了部分问题：
  - Locale class 冲突
 
+
 MPGram CN Demo：<a href="http://mp.bangumi.cyou">(http)
 
 MPGram原版Demo： <a href="https://mp.nnchan.ru/">https://mp.nnchan.ru</a>
