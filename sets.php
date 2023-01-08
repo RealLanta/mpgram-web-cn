@@ -84,7 +84,7 @@ if($set) {
 	}
 }
 
-$lng = MP::initLocale();
+$lng = MP::initLocale1();
 
 header('Content-Type: text/html; charset=utf-8');
 header('Cache-Control: private, no-cache, no-store');

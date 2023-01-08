@@ -10,7 +10,7 @@ include 'mp.php';
 
 $timeoff = MP::getSettingInt('timeoff');
 $theme = MP::getSettingInt('theme');
-$lng = MP::initLocale();
+$lng = MP::initLocale1();
 
 $user = MP::getUser();
 if(!$user) {

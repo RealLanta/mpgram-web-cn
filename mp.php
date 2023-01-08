@@ -769,20 +769,20 @@ class MP {
 		}
 	}
 	
-	public static function initLocale() {
+	public static function initLocale1() {
 		$xlang = $lang = MP::getSetting('lang');
 		if($lang === null) {
 			$lang = isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? (strpos(strtolower($_SERVER['HTTP_ACCEPT_LANGUAGE']), 'ru') !== false ? 'ru' : 'en') : 'ru';
 		}
 		include 'locale.php';
-		Locale::init();
-		if(!Locale::load($lang)) {
-			Locale::load($lang = 'en');
+		Locale1::init();
+		if(!Locale1::load($lang)) {
+			Locale1::load($lang = 'en');
 		}
 		if($lang != $xlang) {
 			MP::cookie('lang', $lang, time() + (86400 * 365));
 		}
-		return Locale::$lng;
+		return Locale1::$lng;
 	}
 
 	public static function init() {

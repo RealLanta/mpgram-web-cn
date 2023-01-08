@@ -17,7 +17,7 @@ $dynupd = MP::getSettingInt('dynupd', 1);
 $reverse = MP::getSettingInt('reverse', 0) == 1;
 $autoscroll = MP::getSettingInt('autoscroll', 1) == 1;
 
-$lng = MP::initLocale();
+$lng = MP::initLocale1();
 
 $msglimit = MP::getSettingInt('limit', 20);
 $msgoffset = 0;

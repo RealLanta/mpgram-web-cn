@@ -8,15 +8,16 @@ include 'mp.php';
 $theme = MP::getSettingInt('theme', 0);
 include 'themes.php';
 Themes::setTheme($theme);
-$lng = MP::initLocale();
+$lng = MP::initLocale1();
 echo MP::x('<head><title>'.$lng['about'].'</title>');
 echo Themes::head();
 echo '</head>';
 echo Themes::bodyStart();
 echo MP::x('<div><a href="login.php">'.$lng['back'].'</a></div>');
 echo '<h1>MPGram Web</h1>';
-echo MP::x('<p>MPGram Web (aka MIDletPascalGram Web) is lightweight telegram web client based on MadelineProto library, for devices with internet access and basic HTML & CSS support</p>');
-echo MP::x('<p>Links:<br>');
+echo MP::x('<p>MPGram Web (别名 MIDletPascalGram Web) 是一个基于 MadelineProto 运行库的简洁 Telegram 客户端, 用于支持互联网访问和基本 HTML 和 CSS 的设备使用</p>');
+echo MP::x('<p>中文翻译由 <a href="https://github.com/RealLanta">RealLanta</a> 进行翻译工作</p>');
+echo MP::x('<p>社交媒体:<br>');
 echo '<a href="https://github.com/shinovon/mpgram-web">GitHub</a><br>';
 if(MP::getUser()) {
 	echo '<a href="chat.php?c=nnmidletschat">Discussion chat</a>';
@@ -24,7 +25,7 @@ if(MP::getUser()) {
 	echo '<a href="https://t.me/nnmidletschat">Discussion chat</a>';
 }
 echo '</p>';
-echo MP::x('<p>Developers:<br>');
+echo MP::x('<p>开发者:<br>');
 echo '<b>Shinovon</b> <a href="https://github.com/shinovon">github</a>';
 echo ' <a href="https://t.me/shinovon">t.me</a>';
 echo '<br>';

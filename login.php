@@ -20,7 +20,7 @@ if($iev > 0 && $iev < 4) $theme = 1;
 $theme = MP::getSettingInt('theme', $theme);
 $post = isset($_SERVER['HTTP_USER_AGENT']) && strpos($_SERVER['HTTP_USER_AGENT'], 'Series60/3') === false;
 
-$lng = MP::initLocale();
+$lng = MP::initLocale1();
 MP::cookie('theme', $theme, time() + (86400 * 365));
 
 function exceptions_error_handler($severity, $message, $filename, $lineno) {
@@ -80,7 +80,7 @@ if((isset($_GET['logout']) || $revoked || $wrong) && !$nouser) {
 }
 function htmlStart() {
 	header("Content-Type: text/html; charset=utf-8");
-	echo '<head><title>'.MP::x(Locale::$lng['login']).'</title>';
+	echo '<head><title>'.MP::x(Locale1::$lng['login']).'</title>';
 	echo Themes::head();
 	// определение часового пояса
 	$iev = MP::getIEVersion();
@@ -330,7 +330,7 @@ if($phone !== null) {
 		echo MP::x('<b>'.MP::x($lng['wrong_number_format']).'</b><br>');
 	}
 	echo '<br><div>';
-	echo MP::x('<a href="about.php">'.$lng['about'].'</a> <a href="login.php?lang=en">English</a> <a href="login.php?lang=ru">Русский</a>');
+	echo MP::x('<a href="about.php">'.$lng['about'].'</a> <a href="login.php?lang=en">English</a> <a href="login.php?lang=ru">Русский</a> <a href="login.php?lang=sc">简体中文</a>');
 	//echo ' <a href="sets.php">'.$lng['settings'].'</a>';
 	echo '</div>';
 	echo Themes::bodyEnd();

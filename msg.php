@@ -11,7 +11,7 @@ if(!$user) {
 }
 
 $theme = MP::getSettingInt('theme');
-$lng = MP::initLocale();
+$lng = MP::initLocale1();
 
 $id = null;
 if(isset($_POST['c'])) {
