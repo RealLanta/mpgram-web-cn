@@ -1,7 +1,7 @@
 # MPGram Web Chinese
 基于 MadelineProto 的简洁 Telegram 网页客户端
 
-MPGram CN Demo：<a href="http://mpcn.bangumi.cyou">(http)</a>或<a href="https://mpcn.bangumi.cyou">(https)</a> (Deploy on [replit](https://replit.com/@reallanta/mpgram-cn?v=1)，你也可以在 [replit](https://replit.com/@reallanta/mpgram-cn?v=1) 上建立一个属于你的MPGram CN！)
+MPGram CN Demo：<a href="http://mp.bangumi.cyou">(http)
 
 MPGram原版Demo： <a href="https://mp.nnchan.ru/">https://mp.nnchan.ru</a>
 
@@ -17,6 +17,9 @@ MPGram原版Demo： <a href="https://mp.nnchan.ru/">https://mp.nnchan.ru</a>
 - 您需要在 php.ini 中设置 browscap 以获得更好的设备标签
 - MadelineProto 需要通过 Composer 进行安装，在网站根目录输入 `composer update` 进行安装 (如果没有Composer请先安装 composer v2 及以上的版本)
 - 请查看 MadelineProto 的文档进行安装 MadelineProto <a href="https://docs.madelineproto.xyz/docs/INSTALLATION.html">跳转到 MadelineProto文档</a>
+
+## 在replit上搭建
+你也可以在 [replit](https://replit.com/@reallanta/mpgram-cn?v=1) 上建立一个属于你的MPGram CN！（请注意，因为 replit 将仓库设置成 private 需要付费，所以 **请不要泄漏你的仓库防止API密钥泄漏**）
 
 ## 测试过的浏览器
 完全支持
