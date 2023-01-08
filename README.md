@@ -1,5 +1,7 @@
 # MPGram Web Chinese
 基于 MadelineProto 的简洁 Telegram 网页客户端
+在原版的基础上不仅汉化也修复了部分问题：
+ - Locale class 冲突
 
 MPGram CN Demo：<a href="http://mp.bangumi.cyou">(http)
 
