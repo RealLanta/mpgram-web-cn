@@ -18,7 +18,8 @@ echo '<h1>MPGram Web</h1>';
 echo MP::x('<p>MPGram Web (别名 MIDletPascalGram Web) 是一个基于 MadelineProto 运行库的简洁 Telegram 客户端, 用于支持互联网访问和基本 HTML 和 CSS 的设备使用</p>');
 echo MP::x('<p>中文翻译由 <a href="https://github.com/RealLanta">RealLanta</a> 进行翻译工作</p>');
 echo MP::x('<p>社交媒体:<br>');
-echo '<a href="https://github.com/shinovon/mpgram-web">GitHub</a><br>';
+echo '<a href="https://github.com/RealLanta/mpgram-web-cn">GitHub（中文版）</a><br>';
+echo '<a href="https://github.com/shinovon/mpgram-web">GitHub（原版）</a><br>';
 if(MP::getUser()) {
 	echo '<a href="chat.php?c=nnmidletschat">Discussion chat</a>';
 } else {
