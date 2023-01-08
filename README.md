@@ -1,6 +1,8 @@
 # MPGram Web Chinese
 基于 MadelineProto 的简洁 Telegram 网页客户端
 
+MPGram CN Demo：<a href="http://mpcn.bangumi.cyou">(http)</a>或<a href="https://mpcn.bangumi.cyou">(https)</a>
+
 MPGram原版Demo： <a href="https://mp.nnchan.ru/">https://mp.nnchan.ru</a>
 
 即使我们已经为您提供了现成的Demo，但是我们推荐您自建一个MPGram
